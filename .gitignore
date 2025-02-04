@@ -20,3 +20,5 @@ Packages/com.ptc.vuforia.engine-*.tgz
 .idea/
 *.bak
 Thumbs.db
+Assets/Editor/Migration/com.ptc.vuforia.engine-10.29.6.tgz
+Assets/Editor/Migration/com.ptc.vuforia.engine-10.29.6.tgz.meta
