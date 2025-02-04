@@ -1,0 +1,21 @@
+# Archivos de Unity a ignorar
+Library/
+Temp/
+Logs/
+Obj/
+Build/
+Builds/
+UserSettings/
+*.csproj
+*.sln
+*.userprefs
+*.DS_Store
+
+# Archivos de Vuforia innecesarios
+Vuforia/config/
+
+# Carpetas de Git que no deben subirse
+.vscode/
+.idea/
+*.bak
+Thumbs.db
