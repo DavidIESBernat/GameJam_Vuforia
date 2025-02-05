@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 01f2f773e83eca84a8d0bfc8a77b962b
+guid: e81871fae0e2fad4faa0e8a2053840f7
 TrueTypeFontImporter:
   externalObjects: {}
   serializedVersion: 4
@@ -9,7 +9,7 @@ TrueTypeFontImporter:
   characterPadding: 1
   includeFontData: 1
   fontNames:
-  - Robot_Font
+  - Roboc
   fallbackFontReferences: []
   customCharacters: 
   fontRenderingMode: 0
