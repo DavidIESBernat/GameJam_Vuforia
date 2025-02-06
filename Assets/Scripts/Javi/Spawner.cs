@@ -16,11 +16,11 @@ public class Spawner : MonoBehaviour
     private int enemiesSpawned = 0;
     private bool isSpawning = false;
 
-    void Start()
+    /*void Start()
     {
         Debug.Log("✅ Spawner script inicializado."); // Comprobación de que el script está corriendo
         StartSpawning();
-    }
+    }*/
 
     public void StartSpawning()
     {

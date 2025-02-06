@@ -14,7 +14,7 @@ public class WaveController : MonoBehaviour
     public UnityEvent onGameEnd;
     public float timer;
 
-    private void Start()
+    public void StartWave()
     {
         StartCoroutine(WaveRoutine());
     }
