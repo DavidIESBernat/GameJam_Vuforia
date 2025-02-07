@@ -38,6 +38,12 @@ public class CannonButton : MonoBehaviour
             StartCoroutine(StartCooldown());
         }
     }
+    public void ResetButton()
+    {
+        fillImage.fillAmount = 1f;
+        button.interactable = true;
+        isOnCooldown = false;
+    }
 
     IEnumerator StartCooldown()
     {
