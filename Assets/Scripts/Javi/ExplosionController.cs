@@ -8,6 +8,11 @@ public class ExplosionController : MonoBehaviour
     public Collider explosionCollider; // Collider de detección de enemigos
     public Transform playerTransform; // Transform del jugador
 
+    void Start()
+    {
+        StartCoroutine(DisableCollider());
+    }
+
     public void TriggerExplosion()
     {
         if (playerTransform == null || explosionEffectObject == null || explosionCollider == null)
@@ -40,6 +45,13 @@ public class ExplosionController : MonoBehaviour
     {
         yield return new WaitForSeconds(delay);
         explosionEffectObject.SetActive(false); // Ocultar el objeto
+    }
+
+    private IEnumerator DisableCollider()
+    {
+        yield return new WaitForSeconds(10.1f);
+        explosionCollider.enabled = false;
+        Debug.Log("tengo sueño");
     }
 
     void OnTriggerEnter(Collider other)

@@ -27,6 +27,7 @@ public class PlayerController : MonoBehaviour
     [Header("Protección")]
     public Collider protectionZone; // Zona de protección donde el jugador no recibe daño
 
+
     void Start()
     {
         currentHealth = maxHealth;
