@@ -570,8 +570,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: "1. Al iniciar la partida se colocar\xE1 la carta del soldado.\n\r\r\n2.
-    Se debe a\xF1adir una carta enemiga por oleada.\n\n3. Una carta enemiga en uso
-    no puede ser reubicada."
+    Una vez colocada, esta no podr\xE1 ser movida.\n\n3. Sobrevive si puedes, suerte."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 543c2697447de774887d212a81d7c099, type: 2}
   m_sharedMaterial: {fileID: -5120047356802168116, guid: 543c2697447de774887d212a81d7c099,
@@ -599,7 +598,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 73.65
+  m_fontSize: 81
   m_fontSizeBase: 90
   m_fontWeight: 400
   m_enableAutoSizing: 1
