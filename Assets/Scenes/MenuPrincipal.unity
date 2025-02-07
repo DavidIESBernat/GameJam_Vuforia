@@ -799,7 +799,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Javier Marti\nDavid Valero\nPau Subirada\nJoel P\xE9res\n\nAleix Garc\xEDa\nMiquel
+  m_text: "Javier Marti\nDavid Valero\nPau Subirada\nJoel P\xE9rez\n\nAleix Garc\xEDa\nMiquel
     Perez\nAdrian Martin"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 543c2697447de774887d212a81d7c099, type: 2}

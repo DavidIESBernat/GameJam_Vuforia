@@ -5124,7 +5124,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5acb84cb33c2fc84ebae411334b0d32a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  waveDuration: 10
+  waveDuration: 45
   redistributionTime: 10
   onWaveStart:
     m_PersistentCalls:
@@ -6314,14 +6314,14 @@ MonoBehaviour:
   PreviewVisible: 1
   RuntimeOcclusion: 0
   RuntimeCollider: 0
-  mTrackableName: As
+  mTrackableName: Carta_Jugador
   mInitializedInEditor: 1
   mDataSetPath: 
-  mAspectRatio: 1.5379999
+  mAspectRatio: 1.7777778
   mImageTargetType: 3
-  mWidth: 0.13003902
+  mWidth: 0.112500004
   mHeight: 0.2
-  mRuntimeTexture: {fileID: 2800000, guid: e90cb7e9c482d374cb79d226d33028b8, type: 3}
+  mRuntimeTexture: {fileID: 2800000, guid: 961f1b48253baab4bbd21c5ba5037150, type: 3}
   mMotionHint: 1
   mTrackingOptimization: 0
   mTrackingOptimizationNeedsUpgrade: 0
@@ -6368,7 +6368,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mObserverBehaviour: {fileID: 1761973176}
   mHiddenRoot: {fileID: 0}
-  mTargetName: As
+  mTargetName: Carta_Jugador
   mDatasetName: 
   mCastedBehaviour: {fileID: 1761973176}
   mMeshFilter: {fileID: 0}
