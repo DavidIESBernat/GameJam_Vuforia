@@ -15,6 +15,12 @@ public class WaveController : MonoBehaviour
     public UnityEvent onGameEnd;
     public float timer;
 
+    public GameObject[] wave1Objects;
+    public GameObject[] wave2Objects;
+    public GameObject[] wave3Objects;
+    public GameObject[] wave4Objects;
+    public GameObject[] wave5Objects;
+
     public TextMeshProUGUI waveSoldier;
 
     public TextMeshProUGUI waveEnemy;
@@ -122,6 +128,51 @@ public class WaveController : MonoBehaviour
         {
             waveText.text = $"Oleada {currentWave}"; // Muestra el tiempo en segundos sin decimales
         }
+    }
+
+    public void ActivateWaveObjects()
+    {
+        // Desactivar todos los objetos de todas las oleadas antes de activar la nueva
+        DeactivateAllObjects();
+
+        switch (currentWave)
+        {
+            case 1:
+                SetActiveArray(wave1Objects, true);
+                break;
+            case 2:
+                SetActiveArray(wave2Objects, true);
+                break;
+            case 3:
+                SetActiveArray(wave3Objects, true);
+                break;
+            case 4:
+                SetActiveArray(wave4Objects, true);
+                break;
+            case 5:
+                SetActiveArray(wave5Objects, true);
+                break;
+            default:
+                Debug.LogWarning("Número de oleada fuera de rango");
+                break;
+        }
+    }
+
+    private void SetActiveArray(GameObject[] objects, bool state)
+    {
+        foreach (GameObject obj in objects)
+        {
+            if (obj != null) obj.SetActive(state);
+        }
+    }
+
+    public void DeactivateAllObjects()
+    {
+        SetActiveArray(wave1Objects, false);
+        SetActiveArray(wave2Objects, false);
+        SetActiveArray(wave3Objects, false);
+        SetActiveArray(wave4Objects, false);
+        SetActiveArray(wave5Objects, false);
     }
 
     //   public void UpdateWaveSoldierUI()
