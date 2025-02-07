@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &1472555579032226838
+--- !u!1 &9107539949507814580
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,46 +8,52 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 4680986895066879105}
-  - component: {fileID: 6788278414097937516}
+  - component: {fileID: 3265822085021099361}
+  - component: {fileID: 4660525532271525346}
   m_Layer: 0
   m_Name: Spawner1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &4680986895066879105
+  m_IsActive: 0
+--- !u!4 &3265822085021099361
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1472555579032226838}
+  m_GameObject: {fileID: 9107539949507814580}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -26.9, y: 0.4, z: -11.35215}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -4.325, y: 0.0126, z: -2.11}
+  m_LocalScale: {x: 0.47674, y: 0.47674, z: 0.47674}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &6788278414097937516
+--- !u!114 &4660525532271525346
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1472555579032226838}
+  m_GameObject: {fileID: 9107539949507814580}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d701f3d4dace2294483f07c7977efad7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyPrefabs:
-  - {fileID: 5700768093265317119, guid: b34a0415864a4824a8df5a53078ba3a1, type: 3}
-  target: {fileID: 0}
-  spawnRate: 3
+  enemyPrefab1: {fileID: 8477003559464958393, guid: b34a0415864a4824a8df5a53078ba3a1,
+    type: 3}
+  enemyPrefab2: {fileID: 5798321481633312935, guid: a031afb2c3499a64d8b2aa2b6380e265,
+    type: 3}
+  target: {fileID: 2453669613664326300, guid: e18ab4f6cde75de49a46060590184207, type: 3}
+  spawnRate: 5
   maxEnemies: 5
   spawnDuration: 30
-  spawnRadius: 10
+  spawnRadius: 0.5
+  spawnEffectPrefab: {fileID: 7059009242165931684, guid: 6a898c7009980a14b86093f169be234c,
+    type: 3}
+  probabilityEnemy1: 90
+  probabilityEnemy2: 10

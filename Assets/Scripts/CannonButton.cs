@@ -5,22 +5,35 @@ using System.Collections;
 public class CannonButton : MonoBehaviour
 {
     public Button button; // Botón en UI
-    public Image fillImage; // Imagen principal (la que se revela con fillAmount)
+    public Image fillImage; // Imagen del cooldown
     public float cooldownTime = 5f; // Duración del cooldown en segundos
+    public ExplosionController explosionController; // Referencia al script de explosión
 
     private bool isOnCooldown = false;
 
     void Start()
     {
         button.onClick.AddListener(UseButton);
-        fillImage.fillAmount = 1f; // Inicia completamente clara
+        fillImage.fillAmount = 1f; // Inicia completamente visible
     }
 
     void UseButton()
     {
         if (!isOnCooldown)
         {
-            Debug.Log("Botón utilizado!");
+            Debug.Log("🔥 Disparo del cañón activado!");
+            
+            // **Llamar a la explosión**
+            if (explosionController != null)
+            {
+                explosionController.TriggerExplosion();
+            }
+            else
+            {
+                Debug.LogError("⚠️ No se asignó un ExplosionController en el Inspector.");
+            }
+
+            // **Iniciar Cooldown**
             fillImage.fillAmount = 0f;
             StartCoroutine(StartCooldown());
         }
@@ -37,14 +50,14 @@ public class CannonButton : MonoBehaviour
             timer += Time.deltaTime;
             float progress = timer / cooldownTime;
 
-            // La imagen de color original se va revelando de izquierda a derecha
+            // La imagen de cooldown se va llenando progresivamente
             fillImage.fillAmount = progress;
 
             yield return null;
         }
 
         // Cooldown terminado
-        fillImage.fillAmount = 1f; // Imagen completamente visible
+        fillImage.fillAmount = 1f;
         button.interactable = true; // Reactiva el botón
         isOnCooldown = false;
     }
